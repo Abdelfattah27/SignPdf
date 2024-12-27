@@ -1,0 +1,10 @@
+<h1>Assigned PDFs</h1>
+<div class="pdf-cards">
+    {% for assigned_pdf in pdfs %}
+        <div class="pdf-card">
+            {{pdf}}
+            <h3>PDF: {{ pdf.hash }}</h3>
+            <a href="{% url 'view_pdf' assigned_pdf.id %}">View PDF</a>
+        </div>
+    {% endfor %}
+</div>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Signing System</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="mt-5">Welcome to the PDF Signing System</h1>
+        <div class="list-group mt-4">
+            <a href="{% url 'upload_pdf' %}" class="list-group-item list-group-item-action">
+                Upload new PDF
+            </a>
+            {% comment %} 
+             <a href="{% url 'list_pdfs' %}" class="list-group-item list-group-item-action">
+                View all PDFs
+            </a> 
+            {% endcomment %}
+            <a href="{% url 'list_assigned_pdfs' %}" class="list-group-item list-group-item-action">
+                View assigned PDFs
+            </a>
+        </div>
+    </div>
+</body>
+</html>
